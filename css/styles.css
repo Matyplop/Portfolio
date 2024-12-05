@@ -56,6 +56,7 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .menu .active {
@@ -63,10 +64,41 @@ body {
 }
 
 .menu a:hover {
+    border-radius: 10px;
     background-color: #bfbdc1;
+    
     color: #020024;
     transition: ease-in .3s;
+    
 }
+
+.iconn{
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+    gap: 1em; /* Espacio entre los iconos */
+    margin-top: 1em;
+}
+
+.icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1em; /* Espacio alrededor del icono y el texto */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo transparente */
+    border-radius: 20px; /* Borde redondeado */
+    color: #fff; /* Color del texto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.icon i:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro al pasar el mouse */
+    color: #000; /* Cambia el color del texto al pasar el mouse */
+}
+
+    
 
 .main{
     margin: 0 auto;
