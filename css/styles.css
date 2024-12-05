@@ -32,6 +32,9 @@ footer {
 
 a, p, .iconn {
     font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    
+
 }
 
 .full-background {
@@ -145,6 +148,7 @@ margin-bottom: 100px;
 
 h1{
     font-size: 3em;
+    margin-bottom: 1em;
 }
 
 span{
