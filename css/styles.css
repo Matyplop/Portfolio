@@ -243,11 +243,31 @@ span{
 }
 
 .experiencia-headings ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
 }
 
-.experiencia-headings ul li {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
+.experiencia-headings ul i {
+    font-size: 3em; 
+    background-color: #deb841; 
+    color: #000; 
+    border-radius: 50%; 
+    padding: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out, color 0.6s ease-in-out; 
+}
+
+.experiencia-headings ul i:hover {
+    transform: rotate(360deg); 
+    background-color: #000; 
+    color: #deb841; 
 }
