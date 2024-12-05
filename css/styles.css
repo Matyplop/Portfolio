@@ -8,16 +8,28 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 
 
-.wrapper,.hobbies,.projectos{
-    width: 100vw;
-    height: 100vh;
+.full-background {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    height: 100vh; /* h-screen */
+    width: 100vw; /* w-screen */
+    background-color: #1a1a1a; /* bg-neutral-950 */
+    background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+}
+
+
+.wrapper,.hobbies,.projectos,.experiencia{
+    
     
     color: #fff;
     background-color: #101010;
+    
  
     background: radial-gradient(ellipse 80% 80% at 50% -20%);
 
@@ -84,9 +96,13 @@ span{
 
 .hobbies{
     display: grid;
-    grid-template-columns: repeat(10,5fr);
-    width: 100vw;
+    grid-template-columns: repeat(10, 1fr); /* Ajusta las columnas de la cuadrícula */
+    width: 100%; /* Asegúrate de que la sección ocupe el 100% del ancho */
     align-items: center;
+    margin-top: 10em;
+    background-color: #101010; /* Asegúrate de que el fondo sea consistente */
+    color: #fff;
+    padding: 2em;
 }
 
 .hobbies-info{
@@ -227,6 +243,16 @@ span{
     text-transform: uppercase;
 }
 
+.icon-link i {
+    font-size: 2em; /* Ajusta el tamaño del icono */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Añade transición */
+}
+
+.icon-link:hover i {
+    transform: rotate(360deg); /* Gira el icono 360 grados */
+    color: #deb841; /* Cambia el color del icono */
+}
+
 .experiencia-headings{
 
     width: 100vw;
@@ -265,11 +291,12 @@ span{
     align-items: center;
     justify-content: center;
     margin-top: 2em;
-    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out, color 0.6s ease-in-out; 
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
 }
 
 .experiencia-headings ul i:hover {
     transform: rotate(360deg); 
     background-color: #000; 
     color: #deb841; 
+    cursor: pointer; 
 }
