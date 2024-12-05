@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      property="og:image"
+      content="https://matyplop.github.io/portfolio/img/portfolio.png"
+    />
+    <meta name="description" content="Portafolio personal de Matías Ceballos, estudiante de Ingeniería Civil Informática.">
+
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
-<body class="wrapper">
-
+<body class="wrapper ">
     
-    <div class ="wrapper full-background">
+    <header>
+
+        <nav class = "navbar">
+                
+            <ul class = "menu">
+                <li><a class = "active" href="#inicio">Inicio</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class = "full-background">
+        
+
         
 
     
-        <header>
 
-            <nav class = "navbar">
-                
-                <ul class = "menu">
-                    <li><a class = "active" href="#inicio">Inicio</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class ="main" id = inicio>
-            <div class = "info-content">
+        <section class ="main" id = "inicio">
+            <div class = "info-content ">
 
 
                 <h1>¡Hola! Mi nombre es <span>Matias Ceballos</span></h1>
@@ -46,144 +54,144 @@
                     <a href="" class = "iconn">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
-                    
+                        
 
                 </div>
-                
+                    
             </div>
-            <img src="./img/yo.png" alt="">
-            
-        </main>
+            <img src="./img/yo.png" alt="Imagen de Matías Ceballos">
+        </section>      
+        
 
     
 
-    <section class = "hobbies" id = "hobbies">
-        <img src="" alt="">
+        <section class = "hobbies" id = "hobbies">
+            
 
-        <div class = "hobbies-info">
-            <h2> <span>Hobbies</span></h2>
-            <div class = "divider"></div>
-            <p>💻 Videojuegos</p>
-            <p> Dedico tiempo a los videojuegos para mi es una forma en desafiarme a mí mismo y disfrutar.</p>
-            <p>🎥 Aprender sobre programación</p>
-            <p>Me gusta ver videos sobre programación, aprender nuevas tecnologías.</p>
-            <p>🌄 Explorar lugares </p>
-            <p>Salir de la rutina y explorar lugares nuevos. Disfruto de paseos largos.</p>
-        </div>
+            <div class = "hobbies-info">
+                <h2> <span>Hobbies</span></h2>
+                <div class = "divider"></div>
+                <p>💻 Videojuegos</p>
+                <p> Dedico tiempo a los videojuegos para mi es una forma en desafiarme a mí mismo y disfrutar.</p>
+                <p>🎥 Aprender sobre programación</p>
+                <p>Me gusta ver videos sobre programación, aprender nuevas tecnologías.</p>
+                <p>🌄 Explorar lugares </p>
+                <p>Salir de la rutina y explorar lugares nuevos. Disfruto de paseos largos.</p>
+            </div>
 
-    </section>
+        </section>
 
-    <section class = "projectos" id = "proyectos">
-        <div class = "proyectos-headings">
-            <h2><span>Proyectos</span></h2>
-            <div class = "divider"></div>
+        <section class = "projectos" id = "proyectos">
+            <div class = "proyectos-headings">
+                <h2><span>Proyectos</span></h2>
+                <div class = "divider"></div>
 
-        </div>
-        
-        <div class = "container">
-            <div class = "card">
-                <div class = "card_img_2">
+            </div>
+            
+            <div class = "container">
+                <article class = "card">
+                    <div class = "card_img_2">
 
-                </div>
-                <div class = "card_title">
-                   
-
-                </div>
-                <div class ="proyectos-links">
-                    <a href="https://github.com/flaviongas/big_data_act_1/blob/main/Campeones.py" class = "icon-link" >
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://flaviplop.streamlit.app/" class = "icon-link">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
+                    </div>
+                    <div class = "card_title">
                     
 
-                </div>
-                <div class = "proyectos-details-content">
-                    <button class = "proyectos-details button">
-                    <a href="https://flaviplop.streamlit.app/">
-                        Detalles del Proyecto
-                    </a>
+                    </div>
+                    <div class ="proyectos-links">
+                        <a href="https://github.com/flaviongas/big_data_act_1/blob/main/Campeones.py" class = "icon-link" >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://flaviplop.streamlit.app/" class = "icon-link">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        
+
+                    </div>
+                    <div class = "proyectos-details-content">
+                        <button class = "proyectos-details button">
+                        <a href="https://flaviplop.streamlit.app/">
+                            Detalles del Proyecto
+                        </a>
+                        
+                        </button>
+
+                    </div>
+
                     
-                    </button>
 
-                </div>
+                </article>
 
-                
+                <article class = "card">
+                    <div class = "card_img_3">
+
+                    </div>
+                    <div class = "card_title">
+                    
+
+                    </div>
+                    <div class ="proyectos-links">
+                        <a href="#" class = "icon-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class = "icon-link">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        
+
+                    </div>
+                    <div class = "proyectos-details-content">
+                        <button class = "proyectos-details button">
+                        <a href="#">
+                            Detalles del Proyecto
+                        </a>
+                        
+                        </button>
+
+                    </div>
+
+                    
+
+                </article>
+
+                <article class = "card">
+                    <div class = "card_img">
+
+                    </div>
+                    <div class = "card_title">
+                    
+
+                    </div>
+                    <div class ="proyectos-links">
+                        <a href="https://github.com/Matyplop/Proyecto-Api" class = "icon-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://matyplop.cl/" class = "icon-link">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        
+
+                    </div>
+                    <div class = "proyectos-details-content">
+                        <button class = "proyectos-details button">
+                        <a href="https://github.com/Matyplop/Proyecto-Api">
+                            Detalles del Proyecto
+                        </a>
+                        
+                        </button>
+
+                    </div>
+
+                    
+
+                </article>
 
             </div>
 
-            <div class = "card">
-                <div class = "card_img_3">
+            
 
-                </div>
-                <div class = "card_title">
-                   
+        </section>
 
-                </div>
-                <div class ="proyectos-links">
-                    <a href="#" class = "icon-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#" class = "icon-link">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
-                    
-
-                </div>
-                <div class = "proyectos-details-content">
-                    <button class = "proyectos-details button">
-                    <a href="#">
-                        Detalles del Proyecto
-                    </a>
-                    
-                    </button>
-
-                </div>
-
-                
-
-            </div>
-
-            <div class = "card">
-                <div class = "card_img">
-
-                </div>
-                <div class = "card_title">
-                   
-
-                </div>
-                <div class ="proyectos-links">
-                    <a href="https://github.com/Matyplop/Proyecto-Api" class = "icon-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://matyplop.cl/" class = "icon-link">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
-                    
-
-                </div>
-                <div class = "proyectos-details-content">
-                    <button class = "proyectos-details button">
-                    <a href="https://github.com/Matyplop/Proyecto-Api">
-                        Detalles del Proyecto
-                    </a>
-                    
-                    </button>
-
-                </div>
-
-                
-
-            </div>
-
-        </div>
-
-        
-
-    </section>
-
-    <section class="experiencia" id = "experiencia">
+        <section class="experiencia" id = "experiencia">
             <div class="experiencia-headings">
                 <h2> <span>Experiencia</span></h2>
                 <div class = "divider"></div>
@@ -226,6 +234,16 @@
                 </ul>
             </div>
         </section>
+        <footer>
+            <p>&copy; 2024 Matías Ceballos. Todos los derechos reservados.</p>
+        </footer>
+
+        
+    </main>
+    
+
 
 </body>
+
+
 </html>
